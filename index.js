@@ -8,7 +8,7 @@ const CORS = {
 };
 res.writeHead(200, CORS);
 if (req.url === '/v8') return res.end('6.8.275.32-node.55');
-if (req.url === '/kahramon') return res.end('antonefimov');
-res.end('test');
+if (req.url === '/login') return res.end('kahramon');
+res.end('Hello World');
 })
 .listen(process.env.PORT);
